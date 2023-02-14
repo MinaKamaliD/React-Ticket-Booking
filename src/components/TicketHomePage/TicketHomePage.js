@@ -84,7 +84,9 @@ class TicketHomePage extends Component {
             City
           </option>
           {this.state.currentCities.map((city) => (
-            <option>{city}</option>
+            <option key={city} value={city}>
+              {city}
+            </option>
           ))}
         </select>
       </div>
