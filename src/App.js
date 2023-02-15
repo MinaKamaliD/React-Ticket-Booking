@@ -3,7 +3,7 @@ import "./App.css";
 import TicketHomePage from "./components/TicketHomePage/TicketHomePage";
 
 const App = () => {
-  return <TicketHomePage></TicketHomePage>;
+  return <TicketHomePage />
 };
 
 export default App;
