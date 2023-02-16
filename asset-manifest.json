@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Ticket-Booking/static/css/main.d1b5d469.css",
-    "main.js": "/React-Ticket-Booking/static/js/main.aab82442.js",
+    "main.css": "/React-Ticket-Booking/static/css/main.6063bf7d.css",
+    "main.js": "/React-Ticket-Booking/static/js/main.edc2d617.js",
     "static/js/787.29fb00d1.chunk.js": "/React-Ticket-Booking/static/js/787.29fb00d1.chunk.js",
     "static/media/12.jpg": "/React-Ticket-Booking/static/media/12.eef0dc7f509bca381ddf.jpg",
     "index.html": "/React-Ticket-Booking/index.html",
-    "main.d1b5d469.css.map": "/React-Ticket-Booking/static/css/main.d1b5d469.css.map",
-    "main.aab82442.js.map": "/React-Ticket-Booking/static/js/main.aab82442.js.map",
+    "main.6063bf7d.css.map": "/React-Ticket-Booking/static/css/main.6063bf7d.css.map",
+    "main.edc2d617.js.map": "/React-Ticket-Booking/static/js/main.edc2d617.js.map",
     "787.29fb00d1.chunk.js.map": "/React-Ticket-Booking/static/js/787.29fb00d1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1b5d469.css",
-    "static/js/main.aab82442.js"
+    "static/css/main.6063bf7d.css",
+    "static/js/main.edc2d617.js"
   ]
 }
