@@ -3,7 +3,8 @@ import { Component } from "react";
 import { useState } from "react";
 import "./TicketHomePage.css";
 
-const data = { // It doesn't need to add data in state, because we won't need to change them later. they are static data.
+const data = {
+  // It doesn't need to add data in state, because we won't need to change them later. they are static data.
   Iran: [
     "Tehran",
     "Mashhad",
@@ -49,15 +50,15 @@ const data = { // It doesn't need to add data in state, because we won't need to
 /////// Functional Component /////////
 
 const TicketHomePage = () => {
-  
   const [currentCities, setCurrentCities] = useState([]);
   const [currentCountry, setCurrentCountry] = useState("");
 
   //It's very important to know, each upadating functions are asynchronous so if we use them after each other, maybe occur some conflicts, therefore we can handle and solve this problem with useEffect hook. Maybe they are some another solotions for this problem, recommend to do some research on it later.
 
-  useEffect(() => setCurrentCities(data[currentCountry]), [currentCountry])
+  useEffect(() => setCurrentCities(data[currentCountry]), [currentCountry]);
 
-  const currentCountryHandler = (event) => setCurrentCountry(event.target.value)
+  const currentCountryHandler = (event) =>
+    setCurrentCountry(event.target.value);
 
   return (
     <div className="container">
@@ -65,7 +66,7 @@ const TicketHomePage = () => {
       <input type="text" placeholder="Last Name" />
       <input type="number" placeholder="Phone Number" />
       <input type="email" placeholder="Email" />
-      <input type="date" />
+      <input type="date" className="date" />
       <select onChange={currentCountryHandler}>
         <option value="countries" hidden>
           Country
@@ -79,11 +80,15 @@ const TicketHomePage = () => {
         <option value="city" hidden>
           City
         </option>
-        {currentCities?.map((city) => ( // recommend to learn more about "?." , "!!" and "??" operators
-          <option key={city} value={city}>
-            {city}
-          </option>
-        ))}
+        {currentCities?.map(
+          (
+            city // recommend to learn more about "?." , "!!" and "??" operators
+          ) => (
+            <option key={city} value={city}>
+              {city}
+            </option>
+          )
+        )}
       </select>
     </div>
   );

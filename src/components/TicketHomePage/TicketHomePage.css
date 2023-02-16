@@ -4,7 +4,31 @@
   box-sizing: border-box;
 }
 .container {
+  margin-top: 50px;
+  margin-left: 100px;
   background-color: rgba(206, 206, 206, 0.192);
   width: 40%;
-  height: 500px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-template-rows: 30px 30px 30px 30px;
+  padding: 10px;
+  align-content: center;
+  border-radius: 5px;
+}
+.date {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  width: 150px;
+  justify-self: center;
+}
+input {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+}
+select {
+  border-radius: 5px;
+  border: none;
 }
