@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { Component } from "react";
 import { useState } from "react";
 import "./TicketHomePage.css";
+// import { Component } from "react";
 
 const data = {
   // It doesn't need to add data in state, because we won't need to change them later. they are static data.
